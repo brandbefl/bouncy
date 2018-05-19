@@ -1,0 +1,111 @@
+@font-face {
+    font-family: 'bouncy';
+    src:  url('../fonts/bouncy.eot?r104vc');
+    src:  url('../fonts/bouncy.eot?r104vc#iefix') format('embedded-opentype'),
+    url('../fonts/bouncy.ttf?r104vc') format('truetype'),
+    url('../fonts/bouncy.woff?r104vc') format('woff'),
+    url('../fonts/bouncy.svg?r104vc#bouncy') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="bo-"], [class*=" bo-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'bouncy' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.bo-arrow-down:before {
+    content: "\e901";
+}
+.bo-bulb:before {
+    content: "\e902";
+}
+.bo-facebook:before {
+    content: "\e903";
+}
+.bo-folk:before {
+    content: "\e904";
+}
+.bo-heart:before {
+    content: "\e905";
+}
+.bo-instagram:before {
+    content: "\e906";
+}
+.bo-joystick:before {
+    content: "\e907";
+}
+.bo-link:before {
+    content: "\e90c";
+}
+.bo-linkedin:before {
+    content: "\e90d";
+}
+.bo-mark:before {
+    content: "\e90e";
+}
+.bo-mouse:before {
+    content: "\e90f";
+}
+.bo-phone:before {
+    content: "\e910";
+}
+.bo-plus:before {
+    content: "\e911";
+}
+.bo-post:before {
+    content: "\e912";
+}
+.bo-roll:before {
+    content: "\e913";
+}
+.bo-tool:before {
+    content: "\e914";
+}
+.bo-twitter:before {
+    content: "\e915";
+}
+.bo-vimeo:before {
+    content: "\e916";
+}
+.bo-nav-menu:before {
+    content: "\e90b";
+}
+@font-face {
+    font-family: 'OpenSansBold';
+    src: url('../fonts/OpenSansBold.eot');
+    src: url('../fonts/OpenSansBold.eot') format('embedded-opentype'),
+    url('../fonts/OpenSansBold.woff2') format('woff2'),
+    url('../fonts/OpenSansBold.woff') format('woff'),
+    url('../fonts/OpenSansBold.ttf') format('truetype'),
+    url('../fonts/OpenSansBold.svg#OpenSansBold') format('svg');
+}
+@font-face {
+    font-family: 'OpenSansRegular';
+    src: url('../fonts/OpenSansRegular.eot');
+    src: url('../fonts/OpenSansRegular.eot') format('embedded-opentype'),
+    url('../fonts/OpenSansRegular.woff2') format('woff2'),
+    url('../fonts/OpenSansRegular.woff') format('woff'),
+    url('../fonts/OpenSansRegular.ttf') format('truetype'),
+    url('../fonts/OpenSansRegular.svg#OpenSansRegular') format('svg');
+}
+@font-face {
+    font-family: 'SourceSansProLight';
+    src: url('../fonts/SourceSansProLight.eot');
+    src: url('../fonts/SourceSansProLight.eot') format('embedded-opentype'),
+    url('../fonts/SourceSansProLight.woff2') format('woff2'),
+    url('../fonts/SourceSansProLight.woff') format('woff'),
+    url('../fonts/SourceSansProLight.ttf') format('truetype'),
+    url('../fonts/SourceSansProLight.svg#SourceSansProLight') format('svg');
+}
+
