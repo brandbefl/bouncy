@@ -13,18 +13,30 @@
   <!-- Place favicon.ico in the root directory -->
 
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style-gallery.css">
   <link rel="stylesheet" href="css/bootstrap-theme.min.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/owl.carousel.min.css">
   <link rel="stylesheet" href="css/owl.theme.default.min.css">
   <link rel="stylesheet" href="scss/style-list.css">
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <!--<script src="js/jquery-2.2.1.min.js"></script>-->
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>-->
+    <!--<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>-->
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
-    <script src="js/main.js"></script>
+
     <script src="js/wow.min.js"></script>
+    <script src="js/modernizr.custom.70736.js"></script>
+
+    <noscript><link rel="stylesheet" type="text/css" href="css/noJS.css"/></noscript>
     <script>
         new WOW().init();
+    </script>
+    <script>
+        $('#myTabs a').click(function (e) {
+            e.preventDefault()
+            $(this).tab('show')
+        })
     </script>
 </head>
   <body>
@@ -41,7 +53,7 @@
                 <span class="icon-bar"></span>
               </button>
               <div>
-                <a class="navbar-brand" href="#"><img src="img/logo-white.png"></a>
+                <a class="navbar-brand" href="#"><img src="img/logo-white.png" id="logo"></a>
               </div>
             </div>
 
@@ -88,45 +100,557 @@
                 <p class="p-base text-center">At vero eos et accusamus et iusto odio dignissimos ducimus qui<br> blanditiis praesentium</p>
                 <div class="icons-s-3 col-lg-12 text-center">
                     <div class="icon-circle">
-                        <span class="bo-heart"></span>
+                        <a href="#"><span class="bo-heart"></span></a>
                     </div>
                     <div class="icon-circle">
-                        <span class="bo-mouse"></span>
+                        <a href="#"><span class="bo-mouse"></span></a>
                     </div>
                     <div class="icon-circle">
-                        <span class="bo-bulb"></span>
+                        <a href="#"><span class="bo-bulb"></span></a>
                     </div>
                 </div>
                 <h3 class="h3-base col-lg-12 col-lg-offset-1">Creative Ideas</h3>
                 <div class="col-lg-4 col-lg-offset-1">
-                     <p class="p-base">At vero eos et accusamus et iusto odio
-                      dignissimos ducimus qui blanditiis praesentium voluptatum deleniti
+                    <p class="p-base">At <span class="color-base-b">vero</span> eos et accusamus et iusto odio
+                        dignissimos <span class="color-grey-b">ducimus</span> qui blanditiis praesentium voluptatum deleniti
                       atque corrupti quos dolores </p>
                 </div>
                 <div class="col-lg-6 col-lg-offset-1">
                     <p class="p-base">At vero eos et accusamus et iusto odio dignissimos
-                     ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti
-                     quos dolores et quas molestias excepturi sint occaecati cupiditate non
-                     provident, similique sunt in culpa qui officia deserunt mollitia animi,
+                     ducimus qui blanditiis praesentium voluptatum deleniti atque <span class="color-grey-b">corruptiquos</span>
+                     dolores et quas molestias <span class="color-base-b">excepturi</span> sint occaecati cupiditate non
+                        provident, <span class="color-grey-b">similique</span> sunt in culpa qui officia deserunt mollitia animi,
                      id est laborum et dolorum fuga. Et harum quidem r</p>
                 </div>
               </div>
           </div>
       </section>
-      <section class="saction-4">
-       <div class="container-fluid">
-          <div class="row">
-              <div class="col-sm-6 first">
-              <div class="col-sm-3 two">
-              <div class="col-sm-3 tree">
+      <section class="section-for" id="s-4">
+         <div class="container-fluid">
+           <div class="row">
+               <h2 class="h2-base text-center">FEATURED PROJECTS</h2>
+               <p class="p-base text-center">At vero eos et accusamus et iusto odio dignissimos ducimus qui<br> blanditiis praesentium </p>
+              <div class="col-lg-6 col-md-6 col-sm-6 s4-img-1"></div>
+              <div class="col-lg-3 col-md-3 col-sm-3 s4-img-2"></div>
+              <div class="col-lg-3 col-md-3 col-sm-3 s4-img-3"></div>
+              <div class="col-lg-12 col-md-12 col-sm-12 submit-now">
+                  <div class="container">
+                      <div class="row">
+                          <p class="col-lg-8 col-md-8 col-sm-8">At vero eos et <span class="font-b">accusamus</span> et iusto odio dignissimos ducimus qui blanditiis </p>
+                           <a class="btn-black-bg" href="#">Submit Now</a>
+                      </div>
+                  </div>
+              </div>
            </div>
          </div>
-      </div>
       </section>
+      <section class="section-five" id="s-5">
+          <div class="container">
+              <div class="row">
+                  <h2 class="h2-base text-center">Our Services</h2>
+                  <p class="p-base text-center margin-b">At vero eos et accusamus et iusto odio dignissimos ducimus qui<br> blanditiis praesentium</p>
+                  <div class="col-lg-1 icons-s-4 wow fadeInLeft" data-wow-offset="300">
+                      <div class="icon-circle">
+                          <a href="#"><span class="bo-tool"></span></a>
+                      </div>
+                      <div class="icon-circle">
+                          <a href="#"><span class="bo-roll"></span></a>
+                      </div>
+                      <div class="icon-circle">
+                          <a href="#"><span class="bo-joystick"></span></a>
+                      </div>
+                      <div class="icon-circle">
+                          <a href="#"><span class="bo-folk"></span></a>
+                      </div>
+                  </div>
+                  <div class="col-lg-4 text-block wow fadeInLeft" data-wow-offset="200">
+                      <h3 class="h3-base">Creative Ideas</h3>
+                      <p class="p-base">
+                          At vero eos et accusamus et <span class="color-base-b">iusto</span> odio dignissimos <span class="color-grey-b">ducimus</span> qui blanditiis praesentium voluptatum deleniti
+                      </p>
+                      <p class="p-base">
+                          quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, <span class="color-grey-b">similique sunt</span> in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.
+                      </p>
+                  </div>
+                  <div class="col-lg-7 progress-warp wow flipInX" data-wow-offset="300">
+                      <div class="progress-contain">
+                        <div class="progress blue">
+                             <span class="progress-left "><span class="progress-bar blue-1"></span></span>
+                             <span class="progress-right"><span class="progress-bar"></span></span>
+                            <div class="progress-value">90<span> %</span></div>
+                        </div>
+                        <div class="progress-title">
+                              <span>Branding</span>
+                        </div>
+                      </div>
+                      <div class="progress-contain">
+                        <div class="progress yellow">
+                             <span class="progress-left"><span class="progress-bar yellow-1"></span></span>
+                             <span class="progress-right"><span class="progress-bar"></span></span>
+                             <div class="progress-value">75<span> %</span></div>
+                        </div>
+                        <div class="progress-title">
+                              <span>Web design</span>
+                        </div>
+                      </div>
+                      <div class="progress-contain">
+                        <div class="progress pink">
+                            <span class="progress-left"><span class="progress-bar pink-1"></span></span>
+                            <span class="progress-right"><span class="progress-bar "></span></span>
+                            <div class="progress-value">60<span> %</span></div>
+                         </div>
+                        <div class="progress-title">
+                            <span>UI/UX</span>
+                        </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+      <section class="section-six" id="s-6">
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-6 col-md-6 col-sm-6">
+                      <h2 class="h2-base">Impressed ?</h2>
+                      <p class="p-base">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias<br><br><span><span class="font-b">- Abdullah Noman</span><br>
+                          Creatice Director, <span class="color-base-b">Code Cafe</span></span></p>
+                  </div>
+                  <div class="col-lg-5 col-md-5 col-sm-5 col-lg-offset-1">
+                      <img src="img/monitor.png">
+                  </div>
+              </div>
+          </div>
+      </section>
+      <section class="section-seven" id="s-7">
+          <div class="container">
+              <div class="row">
+                  <h2 class="h2-base text-center">THE PORTFOLIO</h2>
+                  <p class="p-base text-center margin-b">At vero eos et accusamus et iusto odio dignissimos ducimus qui<br> blanditiis praesentium</p>
+                  <div class="tabs">
+
+                      <!-- Nav tabs -->
+                      <div class="nav-tabs-con">
+                        <ul class="nav nav-tabs" role="tablist">
+                          <li role="presentation" class="active"><a href="#all-works" aria-controls="home" role="tab" data-toggle="tab">All works</a></li>
+                          <li role="presentation"><a href="#print" aria-controls="profile" role="tab" data-toggle="tab">Print</a></li>
+                          <li role="presentation"><a href="#identity" aria-controls="messages" role="tab" data-toggle="tab">Identity</a></li>
+                          <li role="presentation"><a href="#branding" aria-controls="settings" role="tab" data-toggle="tab">Branding</a></li>
+                          <li role="presentation"><a href="#web" aria-controls="settings" role="tab" data-toggle="tab">Web</a></li>
+                          <li role="presentation"><a href="#html" aria-controls="settings" role="tab" data-toggle="tab">HTML</a></li>
+                          <li role="presentation"><a href="#word-press" aria-controls="settings" role="tab" data-toggle="tab">Wordpress</a></li>
+                        </ul>
+                      </div>
+
+                      <!-- Tab panes -->
+                      <div class="tab-content">
+                          <div role="tabpanel" class="tab-pane active" id="all-works">
+                              <div class="gamma-container gamma-loading" id="gamma-container">
+
+                                  <ul class="gamma-gallery">
+
+                                      <li>
+                                          <div data-alt="img03" data-description="<h3>Sky high</h3>" data-max-width="1800" data-max-height="1350">
+                                              <div data-src="images/xxxlarge/3.jpg" data-min-width="1300"></div>
+                                              <div data-src="images/xxlarge/3.jpg" data-min-width="1000"></div>
+                                              <div data-src="images/xlarge/3.jpg" data-min-width="700"></div>
+                                              <div data-src="images/large/3.jpg" data-min-width="300"></div>
+                                              <div data-src="images/medium/3.jpg" data-min-width="200"></div>
+                                              <div data-src="images/small/3.jpg" data-min-width="140"></div>
+                                              <div data-src="images/xsmall/3.jpg"></div>
+                                              <noscript>
+                                                  <img src="images/xsmall/3.jpg" alt="img03"/>
+                                              </noscript>
+                                          </div>
+                                      </li>
+                                      <li>
+                                          <div data-alt="img03" data-description="<h3>Sky high</h3>" data-max-width="1800" data-max-height="1350">
+                                              <div data-src="images/xxxlarge/img1-2.jpg" data-min-width="1300"></div>
+                                              <div data-src="images/xxlarge/img1-2.jpg" data-min-width="1000"></div>
+                                              <div data-src="images/xlarge/img1-2.jpg" data-min-width="700"></div>
+                                              <div data-src="images/large/img1-2.jpg" data-min-width="300"></div>
+                                              <div data-src="images/medium/img1-2.jpg" data-min-width="200"></div>
+                                              <div data-src="images/small/img1-2.jpg" data-min-width="140"></div>
+                                              <div data-src="images/xsmall/img1-2.jpg"></div>
+                                              <noscript>
+                                                  <img src="images/xsmall/3.jpg" alt="img03"/>
+                                              </noscript>
+                                          </div>
+                                      </li>
+                                      <li>
+                                          <div data-alt="img03" data-description="<h3>Sky high</h3>" data-max-width="1800" data-max-height="1350">
+                                              <div data-src="images/xxxlarge/img1-3.jpg" data-min-width="1300"></div>
+                                              <div data-src="images/xxlarge/img1-3.jpg" data-min-width="1000"></div>
+                                              <div data-src="images/xlarge/img1-3.jpg" data-min-width="700"></div>
+                                              <div data-src="images/large/img1-3.jpg" data-min-width="300"></div>
+                                              <div data-src="images/medium/img1-3.jpg" data-min-width="200"></div>
+                                              <div data-src="images/small/img1-3.jpg" data-min-width="140"></div>
+                                              <div data-src="images/xsmall/img1-3.jpg"></div>
+                                              <noscript>
+                                                  <img src="images/xsmall/3.jpg" alt="img03"/>
+                                              </noscript>
+                                          </div>
+                                      </li>
+                                      <li>
+                                          <div data-alt="img03" data-description="<h3>Sky high</h3>" data-max-width="1800" data-max-height="1350">
+                                              <div data-src="images/xxxlarge/img1-4.jpg" data-min-width="1300"></div>
+                                              <div data-src="images/xxlarge/img1-4.jpg" data-min-width="1000"></div>
+                                              <div data-src="images/xlarge/img1-4.jpg" data-min-width="700"></div>
+                                              <div data-src="images/large/img1-4.jpg" data-min-width="300"></div>
+                                              <div data-src="images/medium/img1-4.jpg" data-min-width="200"></div>
+                                              <div data-src="images/small/img1-4.jpg" data-min-width="140"></div>
+                                              <div data-src="images/xsmall/img1-4.jpg"></div>
+                                              <noscript>
+                                                  <img src="images/xsmall/3.jpg" alt="img03"/>
+                                              </noscript>
+                                          </div>
+                                      </li>
+                                      <li>
+                                          <div data-alt="img03" data-description="<h3>Sky high</h3>" data-max-width="1800" data-max-height="1350">
+                                              <div data-src="images/xxxlarge/img2-2.jpg" data-min-width="1300"></div>
+                                              <div data-src="images/xxlarge/img2-2.jpg" data-min-width="1000"></div>
+                                              <div data-src="images/xlarge/img2-2.jpg" data-min-width="700"></div>
+                                              <div data-src="images/large/img2-2.jpg" data-min-width="300"></div>
+                                              <div data-src="images/medium/img2-2.jpg" data-min-width="200"></div>
+                                              <div data-src="images/small/img2-2.jpg" data-min-width="140"></div>
+                                              <div data-src="images/xsmall/img2-2.jpg"></div>
+                                              <noscript>
+                                                  <img src="images/xsmall/3.jpg" alt="img03"/>
+                                              </noscript>
+                                          </div>
+                                      </li>
+                                      <li>
+                                          <div data-alt="img03" data-description="<h3>Sky high</h3>" data-max-width="1800" data-max-height="1350">
+                                              <div data-src="images/xxxlarge/img2-3.jpg" data-min-width="1300"></div>
+                                              <div data-src="images/xxlarge/img2-3.jpg" data-min-width="1000"></div>
+                                              <div data-src="images/xlarge/img2-3.jpg" data-min-width="700"></div>
+                                              <div data-src="images/large/img2-3.jpg" data-min-width="300"></div>
+                                              <div data-src="images/medium/img2-3.jpg" data-min-width="200"></div>
+                                              <div data-src="images/small/img2-3.jpg" data-min-width="140"></div>
+                                              <div data-src="images/xsmall/img2-3.jpg"></div>
+                                              <noscript>
+                                                  <img src="images/xsmall/3.jpg" alt="img03"/>
+                                              </noscript>
+                                          </div>
+                                      </li>
+                                      <li>
+                                          <div data-alt="img03" data-description="<h3>Sky high</h3>" data-max-width="1800" data-max-height="1350">
+                                              <div data-src="images/xxxlarge/img2-1.jpg" data-min-width="1300"></div>
+                                              <div data-src="images/xxlarge/img2-1.jpg" data-min-width="1000"></div>
+                                              <div data-src="images/xlarge/img2-1.jpg" data-min-width="700"></div>
+                                              <div data-src="images/large/img2-1.jpg" data-min-width="300"></div>
+                                              <div data-src="images/medium/img2-1.jpg" data-min-width="200"></div>
+                                              <div data-src="images/small/img2-1.jpg" data-min-width="140"></div>
+                                              <div data-src="images/xsmall/img2-1.jpg"></div>
+                                              <noscript>
+                                                  <img src="images/xsmall/3.jpg" alt="img03"/>
+                                              </noscript>
+                                          </div>
+                                      </li>
+                                      <li>
+                                          <div data-alt="img03" data-description="<h3>Sky high</h3>" data-max-width="1800" data-max-height="1350">
+                                              <div data-src="images/xxxlarge/img2-4.jpg" data-min-width="1300"></div>
+                                              <div data-src="images/xxlarge/img2-4.jpg" data-min-width="1000"></div>
+                                              <div data-src="images/xlarge/img2-4.jpg" data-min-width="700"></div>
+                                              <div data-src="images/large/img2-4.jpg" data-min-width="300"></div>
+                                              <div data-src="images/medium/img2-4.jpg" data-min-width="200"></div>
+                                              <div data-src="images/small/img2-4.jpg" data-min-width="140"></div>
+                                              <div data-src="images/xsmall/img2-4.jpg"></div>
+                                              <noscript>
+                                                  <img src="images/xsmall/3.jpg" alt="img03"/>
+                                              </noscript>
+                                          </div>
+                                      </li>
+                                      <li>
+                                          <div data-alt="img03" data-description="<h3>Sky high</h3>" data-max-width="1800" data-max-height="1350">
+                                              <div data-src="images/xxxlarge/img3-2.jpg" data-min-width="1300"></div>
+                                              <div data-src="images/xxlarge/img3-2.jpg" data-min-width="1000"></div>
+                                              <div data-src="images/xlarge/img3-2.jpg" data-min-width="700"></div>
+                                              <div data-src="images/large/img3-2.jpg" data-min-width="300"></div>
+                                              <div data-src="images/medium/img3-2.jpg" data-min-width="200"></div>
+                                              <div data-src="images/small/img3-2.jpg" data-min-width="140"></div>
+                                              <div data-src="images/xsmall/img3-2.jpg"></div>
+                                              <noscript>
+                                                  <img src="images/xsmall/3.jpg" alt="img03"/>
+                                              </noscript>
+                                          </div>
+                                      </li>
+                                      <li>
+                                          <div data-alt="img03" data-description="<h3>Sky high</h3>" data-max-width="1800" data-max-height="1350">
+                                              <div data-src="images/xxxlarge/img3-4.jpg" data-min-width="1300"></div>
+                                              <div data-src="images/xxlarge/img3-4.jpg" data-min-width="1000"></div>
+                                              <div data-src="images/xlarge/img3-4.jpg" data-min-width="700"></div>
+                                              <div data-src="images/large/img3-4.jpg" data-min-width="300"></div>
+                                              <div data-src="images/medium/img3-4.jpg" data-min-width="200"></div>
+                                              <div data-src="images/small/img3-4.jpg" data-min-width="140"></div>
+                                              <div data-src="images/xsmall/img3-2.jpg"></div>
+                                              <noscript>
+                                                  <img src="images/xsmall/3.jpg" alt="img03"/>
+                                              </noscript>
+                                          </div>
+                                      </li>
+                                      <li>
+                                          <div data-alt="img03" data-description="<h3>Sky high</h3>" data-max-width="1800" data-max-height="1350">
+                                              <div data-src="images/xxxlarge/img3-3.jpg" data-min-width="1300"></div>
+                                              <div data-src="images/xxlarge/img3-3.jpg" data-min-width="1000"></div>
+                                              <div data-src="images/xlarge/img3-3.jpg" data-min-width="700"></div>
+                                              <div data-src="images/large/img3-3.jpg" data-min-width="300"></div>
+                                              <div data-src="images/medium/img3-3.jpg" data-min-width="200"></div>
+                                              <div data-src="images/small/img3-3.jpg" data-min-width="140"></div>
+                                              <div data-src="images/xsmall/img3-3.jpg"></div>
+                                              <noscript>
+                                                  <img src="images/xsmall/3.jpg" alt="img03"/>
+                                              </noscript>
+                                          </div>
+                                      </li>
+                                      <li>
+                                          <div data-alt="img03" data-description="<h3>Sky high</h3>" data-max-width="1800" data-max-height="1350">
+                                              <div data-src="images/xxxlarge/img3-1.jpg" data-min-width="1300"></div>
+                                              <div data-src="images/xxlarge/img3-1.jpg" data-min-width="1000"></div>
+                                              <div data-src="images/xlarge/img3-1.jpg" data-min-width="700"></div>
+                                              <div data-src="images/large/img3-1.jpg" data-min-width="300"></div>
+                                              <div data-src="images/medium/img3-1.jpg" data-min-width="200"></div>
+                                              <div data-src="images/small/img3-1.jpg" data-min-width="140"></div>
+                                              <div data-src="images/xsmall/img3-1.jpg"></div>
+                                              <noscript>
+                                                  <img src="images/xsmall/3.jpg" alt="img03"/>
+                                              </noscript>
+                                          </div>
+                                      </li>
+                                  </ul>
+                              </div>
+                          </div>
+                          <div role="tabpanel" class="tab-pane" id="print">
+                                <img class="img-gallery" src="img/gallery-2.png">
+                          </div>
+                          <div role="tabpanel" class="tab-pane" id="identity">
+                              <img class="img-gallery"  src="img/gallery-3.png">
+                          </div>
+                          <div role="tabpanel" class="tab-pane" id="branding">
+                              <img class="img-gallery" src="img/gallery-4.png">
+                          </div>
+                          <div role="tabpanel" class="tab-pane" id="web">
+                              <img class="img-gallery" src="img/gallery-5.png">
+                          </div>
+                          <div role="tabpanel" class="tab-pane" id="html">
+                              <img class="img-gallery" src="img/gallery-6.png">
+                          </div>
+                          <div role="tabpanel" class="tab-pane" id="word-press">
+                              <img class="img-gallery" src="img/gallery-7.png">
+                          </div>
+                      </div>
+                  </div>
+                  <div class="form-submit">
+                      <p>At vero eos et <span class="font-b">accusamus</span> et iusto odio <span class="font-b">dignissimos</span> ducimus qui blanditiis </p>
+                      <a class="btn-black-bg" href="#">Start Project</a>
+                  </div>
+              </div>
+          </div>
+      </section>
+      <section class="section-eight" id="s-8">
+            <div class="container">
+                <div class="row">
+                    <h2 class="h2-base text-center">THE TEAM</h2>
+                    <p class="p-base text-center">At vero eos et accusamus et iusto odio dignissimos ducimus qui<br> blanditiis praesentium </p>
+                    <div class="owl-carousel owl-one">
+                        <div>
+                            <div class="col-md-5 col-lg-5 col-sm-5  text-center">
+                                <img class="photo-man" src="img/photo-man.jpg">
+                            </div>
+                            <div class="col-lg-7 col-md-7 col-sm-7 team-text">
+                                <p>Abdullah Noman<br> <span>Creative Director, Code Cafe</span></p>
+                                <p class="p-base">At vero eos et accusamus et iusto odio dignissimos<br> ducimus qui blanditiis praesentium</p>
+                                <img src="img/progress-bar.jpg">
+                            </div>
+                        </div>
+                        <div>
+                            <div class="col-md-5 col-lg-5 col-sm-5 text-center">
+                                <img class="photo-man" src="img/photo-man.jpg">
+                            </div>
+                            <div class="col-lg-7 col-md-7 col-sm-7 team-text">
+                                <p>Abdullah Noman<br> <span>Creative Director, Code Cafe</span></p>
+                                <p class="p-base">At vero eos et accusamus et iusto odio dignissimos<br> ducimus qui blanditiis praesentium</p>
+                                <img src="img/progress-bar.jpg">
+                            </div>
+                        </div>
+                        <div>
+                            <div class="col-md-5 col-lg-5 col-sm-5 text-center">
+                                <img class="photo-man" src="img/photo-man.jpg">
+                            </div>
+                            <div class="col-lg-7 col-md-7 col-sm-7 team-text">
+                                <p>Abdullah Noman<br> <span>Creative Director, Code Cafe</span></p>
+                                <p class="p-base">At vero eos et accusamus et iusto odio dignissimos<br> ducimus qui blanditiis praesentium</p>
+                                <img src="img/progress-bar.jpg">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+          <div class="s-8-contact-us">
+              <p class="p-base">Already Loved Us? Let’s talk!</p>
+              <a class="btn-black-bg" href="#">Contact Us</a>
+          </div>
+      </section>
+      <section class="section-nine" id="s-9">
+          <div class="container">
+              <div class="row">
+                  <h2 class="h2-base text-center">Testimonials</h2>
+                  <p class="p-base text-center">At vero eos et accusamus et iusto odio dignissimos ducimus qui<br> blanditiis praesentium </p>
+                  <div class="col-lg-12 feedback-con">
+                      <div class="owl-carousel owl-two">
+                          <div>
+                              <div class="col-md-2 col-lg-2 col-sm-2 col-lg-offset-1 text-center">
+                                  <img class="photo-man-2" src="img/photo-man-2.jpg">
+                              </div>
+                              <div class="col-lg-8 col-md-8 col-sm-8 feedback-text">
+                                  <p class="p-base">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia.</p>
+                                  <p class="p-base"><span class="color-base-b">PARTHO</span><br>FOUNDER, ARTWAYS BD</p>
+                              </div>
+                          </div>
+                          <div>
+                              <div class="col-md-2 col-lg-2 col-sm-2 col-lg-offset-1 text-center">
+                                  <img class="photo-man-2" src="img/photo-man-2.jpg">
+                              </div>
+                              <div class="col-lg-8 col-md-8 col-sm-8 feedback-text">
+                                  <p class="p-base">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia.</p>
+                                  <p class="p-base"><span class="color-base-b">PARTHO</span><br>FOUNDER, ARTWAYS BD</p>
+                              </div>
+                          </div>
+                          <div>
+                              <div class="col-md-2 col-lg-2 col-sm-2 col-lg-offset-1 text-center">
+                                  <img class="photo-man-2" src="img/photo-man-2.jpg">
+                              </div>
+                              <div class="col-lg-8 col-md-8 col-sm-8 feedback-text">
+                                  <p class="p-base">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia.</p>
+                                  <p class="p-base"><span class="color-base-b">PARTHO</span><br>FOUNDER, ARTWAYS BD</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+      <section class="section-ten" id="s-10">
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-12">
+                      <h2 class="h2-base">Last news</h2>
+                      <p class="p-base">At vero eos et accusamus et iusto odio dignissimos ducimus qui<br> blanditiis praesentium </p>
+                  </div>
+                  <div class="owl-carousel owl-tree col-lg-12">
+                      <div class="col-lg-6 col-lg-offset-1 news-con">
+                          <ul>
+                              <li>The trending Landing Pages</li>
+                              <li>by <span>Kabir Uddin</span></li>
+                              <li>6950 Likes - 243 Comments - 703 shares</li>
+                          </ul>
+                          <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                              blanditiis praesentium voluptatum deleniti atque corrupti quos
+                              dolores et quas molestias excepturi sint occaecati cupiditate non
+                              provident, similique sunt in culpa qui officia deserunt mollitia
+                              animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis
+                              est et expedita distinctio...  </p>
+                          <a href="#">+ Read More</a>
+                      </div>
+                      <div class="col-lg-6 col-lg-offset-1 news-con">
+                          <ul>
+                              <li>The trending Landing Pages</li>
+                              <li>by <span>Kabir Uddin</span></li>
+                              <li>6950 Likes - 243 Comments - 703 shares</li>
+                          </ul>
+                          <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                              blanditiis praesentium voluptatum deleniti atque corrupti quos
+                              dolores et quas molestias excepturi sint occaecati cupiditate non
+                              provident, similique sunt in culpa qui officia deserunt mollitia
+                              animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis
+                              est et expedita distinctio...  </p>
+                          <a href="#">+ Read More</a>
+                      </div>
+                      <div class="col-lg-6 col-lg-offset-1 news-con">
+                          <ul>
+                              <li>The trending Landing Pages</li>
+                              <li>by <span>Kabir Uddin</span></li>
+                              <li>6950 Likes - 243 Comments - 703 shares</li>
+                          </ul>
+                          <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                              blanditiis praesentium voluptatum deleniti atque corrupti quos
+                              dolores et quas molestias excepturi sint occaecati cupiditate non
+                              provident, similique sunt in culpa qui officia deserunt mollitia
+                              animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis
+                              est et expedita distinctio...  </p>
+                          <a href="#">+ Read More</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+      <script src="js/jquery.masonry.min.js"></script>
+      <script src="js/jquery.history.js"></script>
+      <script src="js/js-url.min.js"></script>
+      <script src="js/jquerypp.custom.js"></script>
+      <script src="js/gamma.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/main.js"></script>
       <script src="js/vendor/modernizr-3.6.0.min.js"></script>
       <script src="js/plugins.js"></script>
       <script src="js/owl.carousel.min.js"></script>
-     <script src="js/bootstrap.min.js"></script>
+      <script type="text/javascript">
+
+          $(function() {
+
+              var GammaSettings = {
+                  // order is important!
+                  viewport : [ {
+                      width : 1200,
+                      columns : 5
+                  }, {
+                      width : 900,
+                      columns : 4
+                  }, {
+                      width : 500,
+                      columns : 3
+                  }, {
+                      width : 320,
+                      columns : 2
+                  }, {
+                      width : 0,
+                      columns : 2
+                  } ]
+              };
+
+              Gamma.init( GammaSettings, fncallback );
+
+
+              // Example how to add more items (just a dummy):
+
+              var page = 0,
+                  items = ['<li><div data-alt="img03" data-description="<h3>Sky high</h3>" data-max-width="1800" data-max-height="1350"><div data-src="images/xxxlarge/3.jpg" data-min-width="1300"></div><div data-src="images/xxlarge/3.jpg" data-min-width="1000"></div><div data-src="images/xlarge/3.jpg" data-min-width="700"></div><div data-src="images/large/3.jpg" data-min-width="300"></div><div data-src="images/medium/3.jpg" data-min-width="200"></div><div data-src="images/small/3.jpg" data-min-width="140"></div><div data-src="images/xsmall/3.jpg"></div><noscript><img src="images/xsmall/3.jpg" alt="img03"/></noscript></div></li><li><div data-alt="img03" data-description="<h3>Sky high</h3>" data-max-width="1800" data-max-height="1350"><div data-src="images/xxxlarge/3.jpg" data-min-width="1300"></div><div data-src="images/xxlarge/3.jpg" data-min-width="1000"></div><div data-src="images/xlarge/3.jpg" data-min-width="700"></div><div data-src="images/large/3.jpg" data-min-width="300"></div><div data-src="images/medium/3.jpg" data-min-width="200"></div><div data-src="images/small/3.jpg" data-min-width="140"></div><div data-src="images/xsmall/3.jpg"></div><noscript><img src="images/xsmall/3.jpg" alt="img03"/></noscript></div></li><li><div data-alt="img03" data-description="<h3>Sky high</h3>" data-max-width="1800" data-max-height="1350"><div data-src="images/xxxlarge/3.jpg" data-min-width="1300"></div><div data-src="images/xxlarge/3.jpg" data-min-width="1000"></div><div data-src="images/xlarge/3.jpg" data-min-width="700"></div><div data-src="images/large/3.jpg" data-min-width="300"></div><div data-src="images/medium/3.jpg" data-min-width="200"></div><div data-src="images/small/3.jpg" data-min-width="140"></div><div data-src="images/xsmall/3.jpg"></div><noscript><img src="images/xsmall/3.jpg" alt="img03"/></noscript></div></li><li><div data-alt="img03" data-description="<h3>Sky high</h3>" data-max-width="1800" data-max-height="1350"><div data-src="images/xxxlarge/3.jpg" data-min-width="1300"></div><div data-src="images/xxlarge/3.jpg" data-min-width="1000"></div><div data-src="images/xlarge/3.jpg" data-min-width="700"></div><div data-src="images/large/3.jpg" data-min-width="300"></div><div data-src="images/medium/3.jpg" data-min-width="200"></div><div data-src="images/small/3.jpg" data-min-width="140"></div><div data-src="images/xsmall/3.jpg"></div><noscript><img src="images/xsmall/3.jpg" alt="img03"/></noscript></div></li><li><div data-alt="img03" data-description="<h3>Sky high</h3>" data-max-width="1800" data-max-height="1350"><div data-src="images/xxxlarge/3.jpg" data-min-width="1300"></div><div data-src="images/xxlarge/3.jpg" data-min-width="1000"></div><div data-src="images/xlarge/3.jpg" data-min-width="700"></div><div data-src="images/large/3.jpg" data-min-width="300"></div><div data-src="images/medium/3.jpg" data-min-width="200"></div><div data-src="images/small/3.jpg" data-min-width="140"></div><div data-src="images/xsmall/3.jpg"></div><noscript><img src="images/xsmall/3.jpg" alt="img03"/></noscript></div></li>']
+
+              function fncallback() {
+
+                  $( '#loadmore' ).show().on( 'click', function() {
+
+                      ++page;
+                      var newitems = items[page-1]
+                      if( page <= 1 ) {
+
+                          Gamma.add( $( newitems ) );
+
+                      }
+                      if( page === 1 ) {
+
+                          $( this ).remove();
+
+                      }
+
+                  } );
+
+              }
+
+          });
+
+      </script>
+
   </body>
 
 </html>
