@@ -86,7 +86,8 @@
         }
     }
     .icons-s-4 {
-        margin: 0;
+      margin: 0;
+      text-align: center;
         .icon-circle {
             margin-left: 0;
         }
@@ -106,6 +107,7 @@
       }
     }
   }
+
   .team-text {
     text-align: center !important;
   }
@@ -132,7 +134,11 @@
       }
     }
   }
+  .section-five {
+    text-align: center !important;
+  }
 }
+
 @media only screen and (max-width: 840px) {
   .navbar-fix {
     -webkit-box-shadow: 0px 9px 33px -15px rgba(0,0,0,0.2);
@@ -164,5 +170,22 @@
   }
   .team-text {
     padding-right: 0!important;
+  }
+  .section-fourteen {
+    .form-container {
+      padding: 20px;
+      .input-wrap {
+        display: inline-block;
+        max-width: 300px;
+      }
+      .text-area {
+        max-width: 300px;
+        margin: auto;
+      }
+      .btn-default {
+        max-width: 300px;
+        margin: auto;
+      }
+    }
   }
 }
